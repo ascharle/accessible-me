@@ -14,54 +14,56 @@
 
 <body>
   <div class="container">
-    <div class="site-header">
+    <header class="site-header"> <!-- CHANGED: div to header for semantic clarity -->
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav class="main-nav"> <!-- CHANGED: div to nav for semantic clarity -->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
+      </nav>
+      <img src="https://placekitten.com/1200/900" class="banner" alt="A banner image"> <!-- ADDED: alt attribute for accessibility -->
+    </header>
+    <main class="main-content"> <!-- CHANGED: div to main for semantic clarity -->
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      <section class="owner"> <!-- CHANGED: div to section for semantic clarity -->
+        <h2>Meet the owner</h2> <!-- CHANGED: h1 to h2 for hierarchical clarity -->
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
-        <p>
+        <h2>Address</h2> <!-- CHANGED: h1 to h2 for hierarchical clarity -->
+        <address> <!-- CHANGED: p to address for semantic clarity -->
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
-        </p>
-      </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
+        </address>
+      </section>
+      <section class="contact-section"> <!-- CHANGED: div to section for semantic clarity -->
+        <h2>Contact Us</h2> <!-- CHANGED: h1 to h2 for hierarchical clarity -->
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="fullName">Full Name</label> <!-- ADDED: for attribute for label association -->
+          <input type="text" id="fullName" placeholder="Full Name"> <!-- ADDED: id attribute for input association -->
+          <label for="email">Email</label> <!-- ADDED: for attribute for label association -->
+          <input type="text" id="email" placeholder="Email"> <!-- ADDED: id attribute for input association -->
+          <label for="subject">Subject</label> <!-- ADDED: for attribute for label association -->
+          <input type="text" id="subject" placeholder="Subject"> <!-- ADDED: id attribute for input association -->
+          <label for="message">Your Message</label> <!-- ADDED: for attribute for label association -->
+          <textarea id="message"></textarea> <!-- ADDED: id attribute for textarea association -->
           <button type="submit">Send</button>
         </form>
-      </div>
-    </div>
-    <div class="site-footer">
+      </section>
+    </main>
+    <footer class="site-footer"> <!-- CHANGED: div to footer for semantic clarity -->
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
 
